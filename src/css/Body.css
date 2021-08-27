@@ -154,8 +154,14 @@
   .linebreak {
     display: none;
   }
+  .topfeature {
+    text-align: center;
+  }
   .p {
     font-size: 15px;
+  }
+  .p2 {
+    text-align: center;
   }
   .h1 {
     font-size: 22px;
@@ -164,10 +170,30 @@
   .h2 {
     font-size: 22px;
   }
+  .h3 {
+    text-align: center !important;
+  }
   .leafIcon {
     opacity: 0.4;
   }
   .forText {
     justify-content: center !important;
+  }
+  .inputcontainer {
+    display: inherit;
+  }
+  .inputContainer {
+    width: 100%;
+  }
+  .inputEvent {
+    width: 100%;
+  }
+  .inputIcon {
+    position: relative;
+    left: 3%;
+    top: 52px;
+  }
+  .reservationButtondiv {
+    width: 100%;
   }
 }
