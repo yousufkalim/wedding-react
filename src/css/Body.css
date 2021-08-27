@@ -132,3 +132,42 @@
   padding: 15px;
   font-family: Times New Roman;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .mainText {
+    margin: auto !important;
+  }
+  .main1Image {
+    margin: 10px !important;
+    padding: 15px !important;
+  }
+  .mainText h1 {
+    font-size: 22px;
+    padding: 20px;
+  }
+  .mainText p {
+    padding: 20px;
+  }
+  .textIcon {
+    width: 50%;
+    margin: auto;
+  }
+  .linebreak {
+    display: none;
+  }
+  .p {
+    font-size: 15px;
+  }
+  .h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .h2 {
+    font-size: 22px;
+  }
+  .leafIcon {
+    opacity: 0.4;
+  }
+  .forText {
+    justify-content: center !important;
+  }
+}

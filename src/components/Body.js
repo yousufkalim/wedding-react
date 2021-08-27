@@ -27,19 +27,29 @@ import Twitter from "../assets/icons/Twitter.svg";
 const Body = () => {
   return (
     <>
-      <Grid container spacing={2}>
-        <Grid item xs={6} style={{ marginLeft: "20px" }}>
+      <Grid container spacing={2} className="main1">
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          className="main1Image"
+          style={{ marginLeft: "20px" }}
+        >
           <img src={Image} style={{ width: "100%" }} />
         </Grid>
-        <Grid item xs={6} className="mainText">
+        <Grid item xs={12} sm={6} className="mainText">
           <h1>
             Provide the best <span>experience</span> for
+            <br className="linebreak" />
+            your clients and become <br className="linebreak" />
+            unique !
           </h1>
-          <h1> your clients and become </h1>
-          <h1>unique !</h1>
+
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing
-            <br /> elit, sed do eiusmod tempor incididunt ut labore et <br />
+            <br className="linebreak" />
+            elit, sed do eiusmod tempor incididunt ut labore et{" "}
+            <br className="linebreak" />
             dolore magna aliqua. Quis ipsum suspen.
           </p>
 
@@ -55,27 +65,30 @@ const Body = () => {
         spacing={2}
         style={{ background: "#FAF8F3", marginTop: "30px", padding: "40px" }}
       >
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6}>
           <img src={Iphone} style={{ width: "100%", padding: "20px" }} />
         </Grid>
-        <Grid item xs={6} className="" style={{ margin: "auto" }}>
+        <Grid item xs={12} sm={6} className="" style={{ margin: "auto" }}>
           <p className="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing <br /> elit, sed
-            do eiusmod tempor incididunt ut <br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing{" "}
+            <br className="linebreak" /> elit, sed do eiusmod tempor incididunt
+            ut <br className="linebreak" />
             labore et dolore magna aliqua. Quis ipsum
-            <br /> suspendisse ultrices gravida. Risus commodo viverra
-            <br /> maecenas accumsan lacus vel facilisis.{" "}
+            <br className="linebreak" /> suspendisse ultrices gravida. Risus
+            commodo viverra
+            <br className="linebreak" /> maecenas accumsan lacus vel facilisis.{" "}
           </p>
           <h2 className="h2">
             “Lorem ipsum dolor sit hold
-            <br /> amet, consectetur”
+            <br className="linebreak" /> amet, consectetur”
           </h2>
           <div className="leafIcon">
             <img src={Leafs} />
           </div>
           <p className="p">
-            Lorem ipsum dolor sit amet, consectetur <br />
-            adipiscing elit, sed do eiusmod tempor incididunt <br />
+            Lorem ipsum dolor sit amet, consectetur <br className="linebreak" />
+            adipiscing elit, sed do eiusmod tempor incididunt{" "}
+            <br className="linebreak" />
             ut labore et dolore.
           </p>
         </Grid>
@@ -91,7 +104,13 @@ const Body = () => {
           <h1 className="h1">Make the difference and become irresistible</h1>
         </Grid>
         <Grid container spacing={2}>
-          <Grid container item xs={6} style={{ justifyContent: "center" }}>
+          <Grid
+            container
+            item
+            xs={12}
+            sm={6}
+            style={{ justifyContent: "center" }}
+          >
             <p className="p">
               With your app, the clients and vendors have
               <br /> the best tool to organize their wedding and <br />
@@ -99,7 +118,7 @@ const Body = () => {
               the one-of-a-kind to provide such a service.
             </p>
           </Grid>
-          <Grid container item xs={6}>
+          <Grid container item xs={12} sm={6} className="forText">
             <p className="p">
               Lorem ipsum dolor sit amet, consectetur adipi-
               <br />
@@ -149,61 +168,13 @@ const Body = () => {
         <Grid
           item
           container
-          xs={3}
+          xs={12}
+          sm={3}
           style={{
             justifyContent: "center",
           }}
         >
           <img src={illustration1} />
-        </Grid>
-        <Grid
-          item
-          container
-          xs={3}
-          style={{
-            justifyContent: "center",
-          }}
-        >
-          <img src={illustration2} />
-        </Grid>
-        <Grid
-          item
-          container
-          xs={3}
-          style={{
-            justifyContent: "center",
-          }}
-        >
-          <img src={illustration3} />
-        </Grid>
-        <Grid
-          item
-          container
-          xs={3}
-          style={{
-            justifyContent: "center",
-          }}
-        >
-          <img src={illustration4} />
-        </Grid>
-      </Grid>
-      <Grid
-        container
-        spacing={4}
-        style={{
-          marginBottom: "0.2%",
-          padding: "0 5% 0 5%",
-          justifyContent: "center",
-        }}
-      >
-        <Grid
-          item
-          container
-          xs={3}
-          style={{
-            justifyContent: "center",
-          }}
-        >
           <h3 className="h3">
             Send virtual invites to <br />
             the guests
@@ -212,11 +183,13 @@ const Body = () => {
         <Grid
           item
           container
-          xs={3}
+          xs={12}
+          sm={3}
           style={{
             justifyContent: "center",
           }}
         >
+          <img src={illustration2} />
           <h3 className="h3">
             Share the best pictures and <br />
             videos among the guests, and <br />
@@ -226,11 +199,13 @@ const Body = () => {
         <Grid
           item
           container
-          xs={3}
+          xs={12}
+          sm={3}
           style={{
             justifyContent: "center",
           }}
         >
+          <img src={illustration3} />
           <h3 className="h3">
             Create the agenda of the <br />
             D-day
@@ -239,11 +214,13 @@ const Body = () => {
         <Grid
           item
           container
-          xs={3}
+          xs={12}
+          sm={3}
           style={{
             justifyContent: "center",
           }}
         >
+          <img src={illustration4} />
           <h3 className="h3">
             Chat with all the vendors <br />
             and guests
