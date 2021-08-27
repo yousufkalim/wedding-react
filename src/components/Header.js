@@ -37,10 +37,10 @@ export default function Header() {
 
   return (
     <AppBar color="white" position="sticky" className={classes.root}>
-      <Toolbar color="">
+      <Toolbar color="" className="toolbar">
         <IconButton
           edge="start"
-          className={classes.menuButton}
+          className={`${classes.menuButton} IconButton`}
           color="inherit"
           aria-label="menu"
         >

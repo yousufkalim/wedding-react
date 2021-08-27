@@ -256,13 +256,15 @@ const Body = () => {
         <Grid
           container
           spacing={3}
+          className="topfeature"
           style={{
             padding: "0 5% 0 10%",
           }}
         >
           <Grid
             item
-            xs={4}
+            xs={12}
+            sm={4}
             style={{
               padding: "3%",
             }}
@@ -284,7 +286,8 @@ const Body = () => {
           </Grid>
           <Grid
             item
-            xs={4}
+            xs={12}
+            sm={4}
             style={{
               padding: "3%",
             }}
@@ -306,7 +309,8 @@ const Body = () => {
           </Grid>
           <Grid
             item
-            xs={4}
+            xs={12}
+            sm={4}
             style={{
               padding: "3%",
             }}
@@ -339,7 +343,8 @@ const Body = () => {
       >
         <Grid
           item
-          xs={6}
+          xs={12}
+          sm={6}
           style={{
             padding: "6%",
           }}
@@ -355,7 +360,10 @@ const Body = () => {
           </h1>
           <form>
             <div className="inputcontainer">
-              <div style={{ margin: "0 10px 0 10px" }}>
+              <div
+                className="inputContainer"
+                style={{ margin: "0 10px 0 10px" }}
+              >
                 <img className="inputIcon" src={userIcon} />
                 <input
                   className="inputField"
@@ -363,7 +371,10 @@ const Body = () => {
                   type="text"
                 ></input>
               </div>
-              <div style={{ margin: "0 10px 0 10px" }}>
+              <div
+                className="inputContainer"
+                style={{ margin: "0 10px 0 10px" }}
+              >
                 <img className="inputIcon" src={Letter} />
                 <input
                   className="inputField"
@@ -373,7 +384,10 @@ const Body = () => {
               </div>
             </div>
             <div className="inputcontainer">
-              <div style={{ margin: "0 10px 0 10px" }}>
+              <div
+                className="inputContainer"
+                style={{ margin: "0 10px 0 10px" }}
+              >
                 <img className="inputIcon" src={group} />
                 <input
                   className="inputField"
@@ -381,7 +395,10 @@ const Body = () => {
                   type="text"
                 ></input>
               </div>
-              <div style={{ margin: "-2px 10px 0 10px" }}>
+              <div
+                className="inputContainer"
+                style={{ margin: "-2px 10px 0 10px" }}
+              >
                 <img className="inputIcon" src={date} />
                 <input
                   className="inputField"
@@ -391,7 +408,10 @@ const Body = () => {
               </div>
             </div>
             <div className="inputEvent">
-              <div style={{ margin: "0 10px 0 10px" }}>
+              <div
+                className="inputContainer"
+                style={{ margin: "0 10px 0 10px" }}
+              >
                 <img className="inputEventIcon" src={event} />
                 <input
                   className="inputField"
@@ -401,6 +421,7 @@ const Body = () => {
               </div>
             </div>
             <div
+              className="reservationButtondiv"
               style={{ width: "72%", textAlign: "right", marginTop: "20px" }}
             >
               <button
