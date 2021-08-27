@@ -125,3 +125,10 @@
   color: white;
   font-family: roman;
 }
+.footer {
+  background: #e2657c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-family: Times New Roman;
+}

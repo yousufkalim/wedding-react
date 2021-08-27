@@ -19,6 +19,11 @@ import date from "../assets/icons/date.svg";
 import event from "../assets/icons/event.svg";
 import group from "../assets/icons/group.svg";
 import Letter from "../assets/icons/Letter.svg";
+import RSVP from "../assets/icons/RSVP.svg";
+import Facebook from "../assets/icons/Facebook.svg";
+import Linkedin from "../assets/icons/Linkedin.svg";
+import Pinterest from "../assets/icons/Pinterest.svg";
+import Twitter from "../assets/icons/Twitter.svg";
 const Body = () => {
   return (
     <>
@@ -432,6 +437,66 @@ const Body = () => {
           </form>
         </Grid>
       </Grid>
+
+      <Grid
+        container
+        spacing={1}
+        style={{
+          background: "#FAF8F3",
+          marginTop: "30px",
+          padding: "40px",
+          justifyContent: "center",
+        }}
+      >
+        <h1
+          className="h1"
+          style={{ opacity: "0.4", fontWeight: "normal", fontSize: "30px" }}
+        >
+          WeddingVenue.
+        </h1>
+        <Grid container spacing={1} style={{ justifyContent: "center" }}>
+          <p className="p" style={{ textAlign: "center" }}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor <br />
+            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+            ultrices gravida.
+            <br /> Risus commodo viverra maecenas accumsan lacus vel facilisis.{" "}
+          </p>
+        </Grid>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            width: "50%",
+            margin: "auto",
+          }}
+        >
+          <img
+            src={Facebook}
+            style={{ width: "10%", margin: "5px", padding: "5px" }}
+          />
+
+          <img
+            src={Twitter}
+            style={{ width: "10%", margin: "5px", padding: "5px" }}
+          />
+          <img
+            src={Linkedin}
+            style={{ width: "10%", margin: "5px", padding: "5px" }}
+          />
+          <img
+            src={Pinterest}
+            style={{ width: "10%", margin: "5px", padding: "5px" }}
+          />
+          <img
+            src={RSVP}
+            style={{ width: "22%", margin: "5px", padding: "5px" }}
+          />
+        </div>
+      </Grid>
+      <div className="footer">
+        <p>All rights are reserved by @FALCON CONSULTING</p>
+      </div>
     </>
   );
 };
