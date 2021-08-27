@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="161.657" height="69" viewBox="0 0 161.657 69">
+  <g id="RSVP" transform="translate(-1060.171 -5723.5)">
+    <path id="Rectangle_11_copy_4" data-name="Rectangle 11 copy 4" d="M1060.171,5723.5h161.657v69H1060.171v-69Z" fill="#fff" stroke="#000" stroke-width="0"/>
+    <g id="Group_25" data-name="Group 25">
+      <path id="page" d="M1119.2,5768.475h-14.4a.655.655,0,0,1-.655-.655v-13.749h5.892a.655.655,0,0,0,.655-.655v-5.892h8.511a.655.655,0,0,1,.655.655v19.641A.655.655,0,0,1,1119.2,5768.475Zm-9.82-20.95v5.237h-5.238Z" fill="#898378"/>
+      <text id="RSVP-2" data-name="RSVP" transform="translate(1154.232 5764.976)" fill="#918a80" font-size="18" font-family="Avenir-Medium, Avenir" font-weight="500"><tspan x="-21.51" y="0">RSVP</tspan></text>
+    </g>
+  </g>
+</svg>
