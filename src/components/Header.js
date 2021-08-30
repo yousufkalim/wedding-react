@@ -1,14 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
 import Cart from "../assets/icons/Cart.png";
 import Menu from "../assets/icons/Menu.png";
 import Search from "../assets/icons/search.png";
+import NavIcon from "../assets/icons/navbaricon.jpeg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,10 +33,11 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Header() {
   const classes = useStyles();
+  const [flag, setFlag] = useState(false);
 
   return (
     <AppBar color="white" position="sticky" className={classes.root}>
-      <Toolbar color="" className="toolbar">
+      <Toolbar color="" className={flag ? "showToolbar" : "hideToolbar"}>
         <IconButton
           edge="start"
           className={`${classes.menuButton} IconButton`}
@@ -45,6 +45,15 @@ export default function Header() {
           aria-label="menu"
         >
           W Event
+          <div
+            edge="start"
+            className={`${classes.menuButton} navIconbox`}
+            color="inherit"
+            aria-label="menu"
+            onClick={() => setFlag(!flag)}
+          >
+            <img src={NavIcon} style={{ width: "18%" }} />
+          </div>
         </IconButton>
 
         <Typography className={classes.title}>Home</Typography>
@@ -53,36 +62,21 @@ export default function Header() {
         <Typography className={classes.title}>Pages</Typography>
         <Typography className={classes.title}>News</Typography>
         <Typography className={classes.title}>Contact</Typography>
-        <div
-          style={{ marginLeft: "auto", display: "flex", alignItems: "center" }}
-        >
+        <div className={"navbarIconDiv"}>
           <button
-            style={{
-              background: "#E2657C",
-              fontSize: "10px",
-              padding: "12px 17px 12px 17px",
-              border: "none",
-              color: "white",
-              fontFamily: "roman",
-            }}
+            className="QuotationButton"
             variant="contained"
             color="secondary"
           >
             Get A Quotation
           </button>
           <span>
-            <img
-              src={Search}
-              style={{ margin: "3px", padding: "3px", width: "20%" }}
-            />
+            <img src={Search} className="navicon" />
             <img
               src={Cart}
               style={{ margin: "3px", padding: "3px", width: "23%" }}
             />
-            <img
-              src={Menu}
-              style={{ margin: "3px", padding: "3px", width: "20%" }}
-            />
+            <img src={Menu} className="navicon" />
           </span>
         </div>
       </Toolbar>
