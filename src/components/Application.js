@@ -11,7 +11,7 @@ const Application = () => {
       style={{ background: "#FAF8F3", marginTop: "30px", padding: "40px" }}
     >
       <Grid item xs={12} sm={6}>
-        <img src={Iphone} style={{ width: "100%", padding: "20px" }} />
+        <img src={Iphone} alt="Application" style={{ width: "100%", padding: "20px" }} />
       </Grid>
       <Grid item xs={12} sm={6} style={{ margin: "auto" }}>
         <p className="p">
@@ -28,7 +28,7 @@ const Application = () => {
           <br className="linebreak" /> amet, consectetur”
         </h2>
         <div className="leafIcon">
-          <img src={Leafs} />
+          <img src={Leafs} alt="Leaf" />
         </div>
         <p className="p">
           Lorem ipsum dolor sit amet, consectetur <br className="linebreak" />

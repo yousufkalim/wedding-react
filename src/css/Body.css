@@ -140,6 +140,11 @@
   font-family: Times New Roman;
 }
 
+
+.custom_error{
+  color: red;
+}
+
 /* Mobile view */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .mainText {
@@ -203,3 +208,5 @@
     width: 100%;
   }
 }
+
+
