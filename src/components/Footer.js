@@ -35,10 +35,10 @@ const Footer = () => {
           </p>
         </Grid>
         <div className="socialBox">
-          <img src={Facebook} className="socialIcon" />
-          <img src={Twitter} className="socialIcon" />
-          <img src={Linkedin} className="socialIcon" />
-          <img src={Pinterest} className="socialIcon" />
+          <img src={Facebook} className="socialIcon" alt="facebook link" />
+          <img src={Twitter} className="socialIcon" alt="twitter link" />
+          <img src={Linkedin} className="socialIcon" alt="linkedin link" />
+          <img src={Pinterest} className="socialIcon" alt="pinterest link" />
           <img
             src={RSVP}
             style={{ width: "22%", margin: "5px", padding: "5px" }}
