@@ -25,6 +25,7 @@ const Footer = () => {
         >
           WeddingVenue.
         </h1>
+
         <Grid container spacing={1} style={{ justifyContent: "center" }}>
           <p className="p" style={{ textAlign: "center" }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -41,12 +42,28 @@ const Footer = () => {
           <img src={Pinterest} className="socialIcon" alt="pinterest link" />
           <img
             src={RSVP}
-            style={{ width: "22%", margin: "5px", padding: "5px" }}
+            style={{
+              width: "22%",
+              margin: "5px",
+              padding: "5px",
+              cursor: "pointer",
+            }}
           />
         </div>
       </Grid>
       <div className="footer">
-        <p>All rights are reserved by @FALCON CONSULTING</p>
+        <p>
+          Developed By
+          <a
+            href="https:www.falconconsulting.fr"
+            target="_blank"
+            style={{ textDecoration: "none", color: " black" }}
+          >
+            {" "}
+            Falcon IT Consulting
+          </a>{" "}
+          2021. All Rights Reserved
+        </p>
       </div>
     </>
   );
