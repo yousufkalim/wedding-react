@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     opacity: "0.8",
     margin: "0 20px 0 12px",
-    fontFamily: "Times New Roman",
+    fontFamily: "roman",
   },
   title: {
     flexGrow: 0.06,
